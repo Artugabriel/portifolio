@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Site Moderno</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Portfólio de Arthur Gabriel</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button id="modoToggle">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h2>Bem-vindo ao meu site!</h2>
+      <p>Com tema claro/escuro, rolagem suave e um design animado.</p>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+    <img src="20250204_153817.jpg" alt="Foto de Arthur Gabriel" class="foto-perfil" style="width: 200px;" />
+
+  <div class="container">
+    <h2>Sobre</h2>
+    <p><p>Sou Arthur Gabriel, estudante de Análise e Desenvolvimento de Sistemas no SENAC e concluinte do ensino médio. Tenho 18 anos e sou apaixonado por tecnologia, com interesse especial em desenvolvimento web, aplicações desktop e soluções tecnológicas para a área da saúde. Busco constantemente aprimorar minhas habilidades por meio de projetos práticos e estou em busca de oportunidades de estágio para contribuir e crescer profissionalmente.</p>. 
+<br>
+<p>Hi! I'm Arthur Gabriel, an 18-year-old student currently studying Systems Analysis and Development at SENAC while finishing high school. I'm passionate about technology and development, especially web and desktop applications. I'm particularly interested in tech solutions for the healthcare sector. I'm always looking for opportunities to grow, improve my skills, and contribute to meaningful projects.</p>
+
+    .</p>
+    <div class="redes-sociais" style="margin-top: 20px;">
+  <a href="https://github.com/seu-usuario" target="_blank">
+    <img src="Github_icon-icons.com_49946.png" alt="GitHub" style="width: 32px; margin-right: 10px;" />
+  </a>
+  <a href="https://www.linkedin.com/in/seu-usuario" target="_blank">
+    <img src="linkedin_black_logo_icon_147114.png" alt="LinkedIn" style="width: 32px; margin-right: 10px;" />
+  </a>
+  <a href="https://www.instagram.com/artu_gabriel_?igsh=MXhzcjc3M25yMXdw" target="_blank">
+    <img src="instagram_icon_125245.png" alt="Instagram" style="width: 32px;" />
+  </a>
+</div>
+
+  </div>
+</section>
+
+
+ <section id="portfolio" class="section">
+  <div class="container">
+    <h2>Portfólio</h2>
+    <p>Confira alguns projetos legais que desenvolvi recentemente.</p>
+
+    <div class="portfolio-grid">
+      <div class="card">
+        <img src="" alt="Projeto 1">
+        <h3>Sistema de Pré-triagem</h3>
+        <p>Aplicativo web feito em C# para clínicas médicas com login, agenda e controle de pacientes.</p>
+      </div>
+    <section id="artes" class="section">
+  <div class="container">
+    <h2>Minhas Artes Digitais</h2>
+    <p>Além da programação, também sou apaixonado por arte digital. Aqui estão algumas das minhas criações:</p>
+
+    <div class="galeria-artes">
+      <a href="imagens/arte1-grande.jpg" target="_blank">
+        <img src="teste45.png" alt="Arte digital 1" class="arte-img" />
+      </a>
+      <a href="imagens/arte2-grande.jpg" target="_blank">
+        <img src="IMG_20250124_231820_406.jpg" alt="Arte digital 2" class="arte-img" />
+      </a>
+      <!-- Adicione mais -->
+    </div>
+  </div>
+</section>
+
+
+
+      <div class="card">
+        <img src="cadastrodev.png" alt="Projeto 2">
+        <h3>Landing Page Moderna</h3>
+        <p>Site responsivo com animações, modo escuro e formulário de contato funcional.</p>
+      </div>
+
+      <div class="card">
+        <img src="imcseila.png" alt="Projeto 3">
+        <h3>Calculadora IMC</h3>
+        <p>App simples com JavaScript para calcular IMC, com feedback visual e layout limpo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="blog" class="section">
+    <div class="container">
+      <h2>Blog</h2>
+      <p>Leia meus artigos sobre programação, design e tecnologia.</p>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <!-- Modal de imagem -->
+<div id="imagemModal" class="modal">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imagemExpandida">
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

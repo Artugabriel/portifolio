@@ -1,0 +1,258 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #00e0ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #00bcd4;
+}
+
+header {
+  background: #1f1f1f;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav li {
+  display: inline;
+}
+
+#modoToggle {
+  margin-left: 15px;
+  background: none;
+  border: none;
+  color: #00e0ff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#modoToggle:hover {
+  transform: scale(1.1);
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background: #1e1e1e;
+  border: 1px solid #00e0ff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 224, 255, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.galeria-artes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.arte-img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.arte-img:hover {
+  transform: scale(1.05);
+}
+
+/* Redes sociais */
+.redes-sociais img {
+  transition: transform 0.3s;
+}
+
+.redes-sociais img:hover {
+  transform: scale(1.1);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-conteudo {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Contato */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  border: none;
+  background: #00e0ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #00bcd4;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .galeria-artes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Animação na foto de perfil */
+.foto-perfil {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.foto-perfil:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 10px 25px rgba(0, 224, 255, 0.4);
+}
+body {
+  background-color: #121212;
+  color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.light-mode {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
